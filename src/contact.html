@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuanTix - Contact Us</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 min-h-screen flex items-center justify-center p-6">
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-full max-w-4xl rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.10)]">
+
+    <!-- Left side -->
+    <div class="hidden bg-[#66bb6a] p-10 md:flex lg:flex md:flex-col  lg:flex-col justify-between">
+      <h1 class="text-2xl italic font-extrabold text-white">Quan<span class="text-[#1d1d1f]">Tix</span></h1>
+
+      <div class="flex flex-col gap-5">
+        <h2 class="text-2xl font-bold text-white leading-snug">We'd love to hear from you.</h2>
+        <p class="text-white/80 text-sm leading-relaxed">Have a question, feedback, or want to see QuanTix in action? Reach out and our team will get back to you within 24 hours.</p>
+
+        <div class="flex flex-col gap-5 mt-4">
+          <div class="flex items-center gap-4">
+            <div class="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-envelope text-white text-sm"></i>
+            </div>
+            <div>
+              <p class="text-white text-xs font-medium">Email us</p>
+              <p class="text-white/70 text-xs">hello@quantix.com</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-phone text-white text-sm"></i>
+            </div>
+            <div>
+              <p class="text-white text-xs font-medium">Call us</p>
+              <p class="text-white/70 text-xs">+237 600 000 000</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-location-dot text-white text-sm"></i>
+            </div>
+            <div>
+              <p class="text-white text-xs font-medium">Find us</p>
+              <p class="text-white/70 text-xs">Douala, Cameroon</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-clock text-white text-sm"></i>
+            </div>
+            <div>
+              <p class="text-white text-xs font-medium">Response time</p>
+              <p class="text-white/70 text-xs">Within 24 hours</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social links -->
+        <div class="flex gap-3 mt-2">
+          <a href="#" class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition">
+            <i class="fa-brands fa-x-twitter text-white text-xs"></i>
+          </a>
+          <a href="#" class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition">
+            <i class="fa-brands fa-linkedin-in text-white text-xs"></i>
+          </a>
+          <a href="#" class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition">
+            <i class="fa-brands fa-instagram text-white text-xs"></i>
+          </a>
+          <a href="#" class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition">
+            <i class="fa-brands fa-tiktok text-white text-xs"></i>
+          </a>
+        </div>
+      </div>
+
+      <p class="text-white/50 text-xs">&copy; 2026 QuanTix. All rights reserved.</p>
+    </div>
+
+    <!-- Right side -->
+    <div class="bg-white p-10 flex flex-col justify-center gap-5">
+      <div>
+        <h3 class="text-xl font-bold text-[#1d1d1f]">Get in Touch</h3>
+        <p class="text-gray-400 text-xs mt-1">Fill in the form and we'll get back to you shortly.</p>
+      </div>
+
+      <!-- Name -->
+      <div class="flex flex-col gap-1.5">
+        <label class="text-xs font-medium text-[#1d1d1f]">Full name</label>
+        <input type="text" placeholder="Abunaw Robert" class="border border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:border-[#66bb6a] transition placeholder-gray-300">
+      </div>
+
+      <!-- Email & Phone -->
+      <div class="grid grid-cols-2 gap-4">
+        <div class="flex flex-col gap-1.5">
+          <label class="text-xs font-medium text-[#1d1d1f]">Email address</label>
+          <input type="email" placeholder="robert@example.com" class="border border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:border-[#66bb6a] transition placeholder-gray-300">
+        </div>
+        <div class="flex flex-col gap-1.5">
+          <label class="text-xs font-medium text-[#1d1d1f]">Phone <span class="text-gray-300 font-light">(optional)</span></label>
+          <input type="tel" placeholder="+237 600 000 000" class="border border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:border-[#66bb6a] transition placeholder-gray-300">
+        </div>
+      </div>
+
+      <!-- Subject -->
+      <div class="flex flex-col gap-1.5">
+        <label class="text-xs font-medium text-[#1d1d1f]">Subject</label>
+        <select class="border border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:border-[#66bb6a] transition text-gray-400">
+          <option value="" disabled selected>Select a subject</option>
+          <option>General Enquiry</option>
+          <option>Request a Demo</option>
+          <option>Technical Support</option>
+          <option>Billing & Pricing</option>
+          <option>Partnership</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <!-- Message -->
+      <div class="flex flex-col gap-1.5">
+        <label class="text-xs font-medium text-[#1d1d1f]">Message</label>
+        <textarea rows="4" placeholder="Tell us how we can help you..." class="border border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:border-[#66bb6a] transition placeholder-gray-300 resize-none"></textarea>
+      </div>
+
+      <!-- Submit -->
+      <button onclick="submitForm()" class="bg-[#66bb6a] text-white font-semibold text-sm py-3 rounded-full hover:bg-[#57a85b] transition cursor-pointer flex items-center justify-center gap-2">
+        <i class="fa-solid fa-paper-plane text-xs"></i>
+        Send Message
+      </button>
+
+      <!-- Success message -->
+      <div id="success-msg" class="hidden text-center bg-[#e8f5e9] text-[#3b6d11] text-sm font-medium py-3 px-5 rounded-xl">
+        <i class="fa-solid fa-circle-check mr-2"></i>Message sent! We'll get back to you within 24 hours.
+      </div>
+
+      <p class="text-center text-xs text-gray-400">
+        Or email us directly at <a href="mailto:hello@quantix.com" class="text-[#66bb6a] hover:underline">hello@quantix.com</a>
+      </p>
+    </div>
+
+  </div>
+
+  <script>
+    function submitForm() {
+      const inputs = document.querySelectorAll('input[required], select[required], textarea[required]');
+      const successMsg = document.getElementById('success-msg');
+      successMsg.classList.remove('hidden');
+      setTimeout(() => successMsg.classList.add('hidden'), 5000);
+    }
+  </script>
+
+</body>
+</html>

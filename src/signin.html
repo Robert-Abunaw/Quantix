@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuanTix - Sign In</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 min-h-screen flex items-center justify-center p-6">
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-full max-w-4xl rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.10)]">
+
+    <!-- Left Panel -->
+    <div class="hidden bg-[#66bb6a] p-10 md:flex lg:flex md:flex-col lg:flex-col justify-between">
+      <h1 class="text-2xl italic font-extrabold text-white">Quan<span class="text-[#1d1d1f]">Tix</span></h1>
+
+      <div class="lg:flex lg:flex-col gap-5">
+        <h2 class="text-2xl font-bold text-white leading-snug md:pb-3">Welcome back. Your finances are waiting.</h2>
+        <p class="text-white/80 text-sm leading-relaxed md:pb-5">Sign in to access your dashboard, reports, and real time financial insights.</p>
+
+        <div class="flex flex-col gap-3 mt-2">
+          <div class="flex items-center gap-3">
+            <div class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-white text-xs">✓</div>
+            <p class="text-white/90 text-sm">Live dashboard & analytics</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-white text-xs">✓</div>
+            <p class="text-white/90 text-sm">Your reports, ready in one click</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-white text-xs">✓</div>
+            <p class="text-white/90 text-sm">Secure & encrypted session</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-white/50 text-xs">&copy; 2026 QuanTix. All rights reserved.</p>
+    </div>
+
+    <!-- Right Panel -->
+    <div class="bg-white p-10 flex flex-col justify-center gap-5">
+      <div>
+        <h3 class="text-xl font-bold text-[#1d1d1f]">Sign in to QuanTix</h3>
+        <p class="text-gray-400 text-xs mt-1">Don't have an account? <a href="signup.html" class="text-[#66bb6a] font-medium hover:underline">Sign up free</a></p>
+      </div>
+
+      <!-- Email -->
+      <div class="flex flex-col gap-1.5">
+        <label class="text-xs font-medium text-[#1d1d1f]">Email address</label>
+        <input type="email" placeholder="robert@example.com" class="border border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:border-[#66bb6a] transition placeholder-gray-300">
+      </div>
+
+      <!-- Password -->
+      <div class="flex flex-col gap-1.5">
+        <div class="flex justify-between items-center">
+          <label class="text-xs font-medium text-[#1d1d1f]">Password</label>
+          <a href="#" class="text-xs text-[#66bb6a] hover:underline">Forgot password?</a>
+        </div>
+        <div class="relative">
+          <input id="password" type="password" placeholder="Enter your password" class="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:border-[#66bb6a] transition placeholder-gray-300 pr-10">
+          <i id="toggle-eye" onclick="togglePassword()" class="fa-regular fa-eye absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 cursor-pointer hover:text-[#66bb6a] transition"></i>
+        </div>
+      </div>
+
+      <!-- Remember me -->
+      <div class="flex items-center gap-2">
+        <input type="checkbox" id="remember" class="accent-[#66bb6a] cursor-pointer">
+        <label for="remember" class="text-xs text-gray-400 cursor-pointer">Remember me for 30 days</label>
+      </div>
+
+      <!-- Submit -->
+      <button class="bg-[#66bb6a] text-white font-semibold text-sm py-3 rounded-full hover:bg-[#57a85b] transition cursor-pointer">
+        Sign In
+      </button>
+
+      <!-- Divider -->
+      <div class="flex items-center gap-3">
+        <hr class="flex-1 border-gray-200">
+        <span class="text-xs text-gray-400">or</span>
+        <hr class="flex-1 border-gray-200">
+      </div>
+
+      <!-- Google -->
+      <button class="flex items-center justify-center gap-3 border border-gray-200 rounded-full py-2.5 text-sm font-medium text-[#1d1d1f] hover:bg-gray-50 transition cursor-pointer">
+        <i class="fa-brands fa-google text-[#ea4335]"></i>
+        Continue with Google
+      </button>
+
+      <!-- Terms -->
+      <p class="text-center text-xs text-gray-400 leading-relaxed">
+        By signing in you agree to our
+        <a href="#" class="text-[#66bb6a] hover:underline">Terms of Use</a> and
+        <a href="#" class="text-[#66bb6a] hover:underline">Privacy Policy</a>
+      </p>
+    </div>
+
+  </div>
+
+  <script>
+    function togglePassword() {
+      const input = document.getElementById('password');
+      const eye = document.getElementById('toggle-eye');
+      if (input.type === 'password') {
+        input.type = 'text';
+        eye.classList.replace('fa-eye', 'fa-eye-slash');
+      } else {
+        input.type = 'password';
+        eye.classList.replace('fa-eye-slash', 'fa-eye');
+      }
+    }
+  </script>
+
+</body>
+</html>
