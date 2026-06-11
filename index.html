@@ -6,7 +6,7 @@
     <title>QuanTix-Financial-Analytics</title>
      <script src="https://cdn.tailwindcss.com"></script>
      <script src="https://cdn.tailwindcss.com"></script>
-<script>
+     <script>
   tailwind.config = {
     theme: {
       extend: {
@@ -22,6 +22,10 @@
           '100': '25rem',
           '110': '27.5rem',
           '175': '43.75rem',
+        },
+        fontFamily: {
+          heading: ['Space Grotesk', 'sans-serif'],
+          body: ['Nunito', 'sans-serif'],
         }
       }
     }
@@ -72,86 +76,108 @@
               <button class="font-bold text-sm"><a href="src/signin.html">Sign in</a></button>
               <button class="bg-[#66bb6a] rounded-3xl text-white px-5 py-2 text-sm font-bold"><a href="./signup.html">Sign up</a></button>
            </div>
-      </ul>
+         </ul>
  
-    <section class="bg-[#e8f5e9] mx-4 md:mx-16 lg:mx-30 rounded-2xl mt-10 lg:mt-20 flex flex-col lg:flex-row relative">
-        
+    <section class="bg-[#e8f5e9] mx-4 md:mx-16 lg:mx-30 rounded-2xl mt-10 lg:mt-20 flex flex-col lg:flex-row relative pb-10 lg:pb-60">
+
   
-      
-      
-      <div class="pl-5 pt-8 pb-10 flex-1">
-             <button class="border-1px border-gray-700 bg-gray-900 px-5 rounded-xl mb-6 text-[#ffff]"><span class="text-[#66bb6a]">#1</span> Finance Data Analytics Platform</button>
-            <h2 stye="font-family: Space Grotesk, sans-serif;" class="text-2xl sm:text-4xl lg:text-6xl font-bold  mb-4 lg:mb-7 leading-tight text-[#1d1d1f]">
-                Finance-Data<br>Analytics<br><span class="text-[#66bb6a]">Intelligence</span>
-            </h2>
-             <p class="mt-4 text-gray-500 mb-6 text-base  lg:text-2xl font-bold">
-                Transform business data into predictive insights using next generation analytics
-            </p>
-            <button class="bg-[#66bb6a] rounded-3xl text-white px-5 py-2 font-bold cursor-pointer hover:bg-[#57a85b] transition"><a href="./src/signup.html">Sign up now</a></button>
-            <button class="bg-[#66bb6a] text-white font-medium px-6 py-2.5 rounded-full hover:bg-[#57a85b] transition cursor-pointer">
-               <a href="src/contact.html">Get In Touch</a>
-            </button>
-        </div>
-        <div class="flex-1">
-            <img class="pt-5 lg:mb-70 pr-8 rounded-2xl hover:shadow-[0_28px_80px_rgba(0,0,0,0.18)] transition-shadow duration-300" src="./images/dash.png" alt="dash-image">
-        </div>
-  <div class="hidden lg:block absolute bottom-0 left-2/4  translate-y-1/2 -translate-x-1/3 bg-white border-0  h-110 w-80 rounded-2xl shadow-2xl shadow-gray-300 p-4 lg:mt-10 hover:shadow-[0_28px_80px_rgba(0,0,0,0.18)] transition-shadow duration-300">
-             <p class="text-[13px] font-medium text-2xl pb-3 text-[#1d1d1f]">Your Finances<span class="text-[#66bb6a]">, Made Simple.</span></p>
-            <p class="text-[13px] text-gray-400 pb-2">Accounting, Analytics & Reporting For Everyone.</p>
-            <hr class="border-gray-200">
-            <p class="text-[10px] uppercase tracking-wider text-gray-400 font-medium py-3">Who uses Quantix?</p>
-
-    <div class="grid grid-cols-2 gap-2 flex-1 ">
-       <div class="bg-gray-50 border border-gray-300 rounded-lg p-2.5 flex flex-col gap-1">
-             <i class="fa-solid fa-calculator"></i>
-             <h1 style="font-family: Space Grotesk, sans-serif;" class="font-semibold text-[#1d1d1f]">Accountants</h1>
-
-             <p class="text-gray-400 text-[13px]"> Automate reports & streamline workflow.</p>
-       </div>
-        <div class="bg-gray-50 border border-gray-300 rounded-lg p-2.5 flex flex-col gap-1">
-              <i class="fa-solid fa-briefcase"></i>
-              <h1 style="font-family: Space Grotesk, sans-serif;" class="font-semibold text-[#1d1d1f]">Business owners</h1>
-              <p class="text-gray-400 text-[13px]">Understand finances, no degree needed.</p>
-       </div>
-        <div class="bg-gray-50 border border-gray-300 rounded-lg p-2.5 flex flex-col gap-1">
-               <i class="fa-solid fa-chart-line"></i>
-               <h1 style="font-family: Space Grotesk, sans-serif;" class="font-semibold text-[#1d1d1f]">Investors & Stakeholders</h1>
-               <p class="text-gray-400 text-[13px]">Track performance & make bold decisions.</p>
-       </div>
-        <div class="bg-gray-50 border border-gray-300 rounded-lg p-2.5 flex flex-col gap-1">
-               <i class="fa-regular fa-chart-bar"></i>
-               <h1 style="font-family: Space Grotesk, sans-serif;" class="font-semibold text-[#1d1d1f]">Financial Analysts</h1>
-               <p class="text-gray-400 text-[13px]">Powerful analytics & flexible reporting.</p>
-       </div>
+  <div class="pl-5 pt-8 pb-10 flex-1">
+    <button class="bg-gray-900 px-5 rounded-xl mb-6 text-white text-sm py-1">
+      <span class="text-[#66bb6a]">#1</span> Finance Data Analytics Platform
+    </button>
+    <h2 class="font-heading text-2xl sm:text-4xl lg:text-6xl font-bold mb-4 lg:mb-7 leading-tight text-[#1d1d1f]">
+      Finance-Data<br>Analytics<br><span class="text-[#66bb6a]">Intelligence</span>
+    </h2>
+    <p class="mt-4 text-gray-500 mb-6 text-base lg:text-2xl font-bold">
+      Transform business data into predictive insights using next generation analytics
+    </p>
+    <div class="flex flex-wrap gap-3">
+      <button class="bg-[#66bb6a] rounded-3xl text-white px-5 py-2 font-bold cursor-pointer hover:bg-[#57a85b] transition">
+        <a href="./src/signup.html">Sign up now</a>
+      </button>
+      <button class="bg-[#66bb6a] text-white font-medium px-6 py-2.5 rounded-full hover:bg-[#57a85b] transition cursor-pointer">
+        <a href="./src/contact.html">Get In Touch</a>
+      </button>
     </div>
-    </section>
-    <section>
-        <h3 class="text-[#1d1d1f] text-center pt-16 lg:pt-80 text-2xl lg:text-4xl font-bold">
-            Stop Guessing, <span class="text-[#66bb6a]">Start Knowing</span>
-        </h3>
-        <p class="text-center text-gray-400 pt-5 pb-13 font-bold ">Transform raw financial data into actionable intelligence with <span class="italic">QuanTix</span>. Our platform helps businesses, accountants, and decision makers <br> move beyond assumptions by providing real time financial insights, performance analytics, and intelligent reporting.</p>
-        <div class="flex flex-col lg:flex-row px-6 lg:ml-50 mt-10 lg:mt-30 gap-8">
-            <div class="flex-1 ">
-                <h1 style="font-family: Space Grotesk, sans-serif;" class="text-[#1d1d1f]  font-bold py-3 text-2xl">Financial Recording</h1>
-                <p class=" text-gray-400">
-                  Core accounting engine,<br> captures and organise<br>all financial activity 
-                </p>
+  </div>
 
-            </div>
-            <div class="flex-1">
-                <h1 style="font-family: Space Grotesk, sans-serif;" class="text-[#1d1d1f] font-bold py-3 text-2xl">Business Analytics</h1>
-                <p class=" text-gray-400">
-                   Turn raw numbers into insight<br> that drives decisions
-                </p>
-            </div>
-            <div class="flex-1">
-                <h1 style="font-family: Space Grotesk, sans-serif;" class="text-[#1d1d1f] font-bold py-3 text-2xl">Financial Reporting</h1>
-                <p class=" text-gray-400">
-                   Present financial data clearly<br> for every type of reader
-                </p>
-            </div>  
-        </div>
-    </section>
+  
+  <div class="flex-1 flex items-start justify-center px-4 lg:px-0 pt-6 lg:pt-8">
+    <img class="w-full max-w-md lg:max-w-none lg:pr-8 rounded-2xl hover:shadow-[0_28px_80px_rgba(0,0,0,0.18)] transition-shadow duration-300" 
+    src="./images/dash.png" alt="dash-image">
+  </div>
+
+  
+  <div class="hidden lg:block absolute bottom-0 left-1/2 translate-y-1/2 -translate-x-1/3 bg-white border-0 h-110 w-80 rounded-2xl shadow-2xl shadow-gray-300 p-4 hover:shadow-[0_28px_80px_rgba(0,0,0,0.18)] transition-shadow duration-300">
+    <p class="font-heading text-[13px] font-medium text-2xl pb-3 text-[#1d1d1f]">Your Finances<span class="text-[#66bb6a]">, Made Simple.</span></p>
+    <p class="text-[13px] text-gray-400 pb-2">Accounting, Analytics & Reporting For Everyone.</p>
+    <hr class="border-gray-200">
+    <p class="text-[10px] uppercase tracking-wider text-gray-400 font-medium py-3">Who uses Quantix?</p>
+    <div class="grid grid-cols-2 gap-2">
+      <div class="bg-gray-50 border border-gray-300 rounded-lg p-2.5 flex flex-col gap-1">
+        <i class="fa-solid fa-calculator text-[#66bb6a]"></i>
+        <h1 class="font-heading font-semibold text-[#1d1d1f] text-sm">Accountants</h1>
+        <p class="text-gray-400 text-[13px]">Automate reports & streamline workflow.</p>
+      </div>
+      <div class="bg-gray-50 border border-gray-300 rounded-lg p-2.5 flex flex-col gap-1">
+        <i class="fa-solid fa-briefcase text-[#66bb6a]"></i>
+        <h1 class="font-heading font-semibold text-[#1d1d1f] text-sm">Business owners</h1>
+        <p class="text-gray-400 text-[13px]">Understand finances, no degree needed.</p>
+      </div>
+      <div class="bg-gray-50 border border-gray-300 rounded-lg p-2.5 flex flex-col gap-1">
+        <i class="fa-solid fa-chart-line text-[#66bb6a]"></i>
+        <h1 class="font-heading font-semibold text-[#1d1d1f] text-sm">Investors & Stakeholders</h1>
+        <p class="text-gray-400 text-[13px]">Track performance & make bold decisions.</p>
+      </div>
+      <div class="bg-gray-50 border border-gray-300 rounded-lg p-2.5 flex flex-col gap-1">
+        <i class="fa-regular fa-chart-bar text-[#66bb6a]"></i>
+        <h1 class="font-heading font-semibold text-[#1d1d1f] text-sm">Financial Analysts</h1>
+        <p class="text-gray-400 text-[13px]">Powerful analytics & flexible reporting.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+ <section class="px-4 md:px-16 lg:px-30">
+  <h3 class="text-[#1d1d1f] text-center pt-16 lg:pt-80 text-2xl lg:text-4xl font-bold">
+    Stop Guessing, <span class="text-[#66bb6a]">Start Knowing</span>
+  </h3>
+
+  <p class="text-center text-gray-400 pt-5 font-bold">
+    Transform raw financial data into actionable intelligence with <span class="italic">QuanTix</span>. Our platform helps businesses, accountants, and decision makers move beyond assumptions by providing real time financial insights, performance analytics, and intelligent reporting.
+  </p>
+
+  <div class="flex flex-col lg:flex-row mt-3 lg:mt-30 gap-8">
+
+    <div class="flex-1">
+      
+      <div class="rounded-full bg-[#e8f5e9] flex items-center justify-center w-10 h-10 mb-3 ml-16">
+        <i class="fa-solid fa-book-open text-[#66bb6a]"></i>
+      </div>
+      <h1 class="font-heading text-[#1d1d1f] font-bold py-3 text-2xl">Financial Recording</h1>
+      <p class="text-gray-400">Core accounting engine, captures and organises all financial activity.</p>
+    </div>
+
+    <div class="flex-1">
+      
+      <div class="rounded-full bg-[#e8f5e9] flex items-center justify-center w-10 h-10 mb-3 ml-16">
+        <i class="fa-solid fa-chart-bar text-[#66bb6a]"></i>
+      </div>
+      <h1 class="font-heading text-[#1d1d1f] font-bold py-3 text-2xl">Business Analytics</h1>
+      <p class="text-gray-400">Turn raw numbers into insight that drives decisions.</p>
+    </div>
+
+    <div class="flex-1">
+      
+      <div class="rounded-full bg-[#e8f5e9] flex items-center justify-center w-10 h-10 mb-3 ml-16">
+        <i class="fa-solid fa-file-lines text-[#66bb6a]"></i>
+      </div>
+      <h1 class="font-heading text-[#1d1d1f] font-bold py-3 text-2xl">Financial Reporting</h1>
+      <p class="text-gray-400">Present financial data clearly for every type of reader.</p>
+    </div>
+
+  </div>
+</section>
     <section id="process" class="bg-[#e8f5e9] mx-4 md:mx-16 lg:mx-30 rounded-2xl mt-10 lg:mt-30">
      <div class="flex flex-col lg:flex-row">   
         <div class="flex-1" >
